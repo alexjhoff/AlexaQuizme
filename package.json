@@ -1,0 +1,25 @@
+{
+  "name": "alexa-quizlet",
+  "version": "1.0.0",
+  "description": "quizlet for alexa",
+  "main": "handler.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexjhoff/AlexaQuizme.git"
+  },
+  "keywords": [
+    "alexa",
+    "quizlet"
+  ],
+  "author": "Danno Mayer, Brayden Aguilera, Alex Hoff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexjhoff/AlexaQuizme/issues"
+  },
+  "homepage": "https://github.com/alexjhoff/AlexaQuizme#readme"
+}
