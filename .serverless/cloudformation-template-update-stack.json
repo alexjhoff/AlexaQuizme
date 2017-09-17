@@ -92,7 +92,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-alexa-skill-quizlet/dev/1505610117075-2017-09-17T01:01:57.075Z/serverless-alexa-skill-quizlet.zip"
+          "S3Key": "serverless/serverless-alexa-skill-quizlet/dev/1505611860716-2017-09-17T01:31:00.716Z/serverless-alexa-skill-quizlet.zip"
         },
         "FunctionName": "serverless-alexa-skill-quizlet-dev-answer",
         "Handler": "handler.answer",
@@ -111,14 +111,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "AnswerLambdaVersionz8FnJYk5BNpeTRWWC0Ca9ZNTjwZrvsskcD67bp4E": {
+    "AnswerLambdaVersion0oXjPU8jbMK0GlwaciD93HOxYdYywBacacF60ZH4": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AnswerLambdaFunction"
         },
-        "CodeSha256": "+z8FnJYk+5BNpeTRWWC0Ca9ZNTjw+ZrvsskcD67bp4E="
+        "CodeSha256": "0oXjPU8jbM/K0Glwac+iD93HOxYdYywBacacF60Z/H4="
       }
     },
     "AnswerLambdaPermissionAlexaSkill": {
@@ -144,7 +144,7 @@
     "AnswerLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AnswerLambdaVersionz8FnJYk5BNpeTRWWC0Ca9ZNTjwZrvsskcD67bp4E"
+        "Ref": "AnswerLambdaVersion0oXjPU8jbMK0GlwaciD93HOxYdYywBacacF60ZH4"
       }
     }
   }

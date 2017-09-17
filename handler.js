@@ -2,9 +2,8 @@
 var request = require("request")
 
 module.exports.answer = (event, context, callback) => {
-    console.log(event)
-    console.log(context)
     const hand = handler(event, context)
+    console.log('hand')
     console.log(hand)
     const res = 'hi'
     callback(null, {
@@ -54,7 +53,9 @@ const handler = (event, context) => {
             onIntent(event.request,
                 event.session,
                 function callback(sessionAttributes, speechletResponse) {
-                    context.succeed(buildResponse(sessionAttributes, speechletResponse));
+                    console.log('onintent callback')
+                    console.log('sessionattributes: ', sessionAttributes, 'speechlet response', speechletResponse)
+                    return context.succeed(buildResponse(sessionAttributes, speechletResponse));
                 });
         } else if (event.request.type === "SessionEndedRequest") {
             onSessionEnded(event.request, event.session);
@@ -143,8 +144,12 @@ function getJSON(callback) {
     request.get(url(), function(error, response, body) {
         var d = JSON.parse(body)
         var result = d.title
-
-        if (result > 0 ) {
+        console.log('result')
+        console.log(result)
+        console.log('body')
+        console.log(body)
+        if (result != '') {
+            console.log('getJson callback success')
             callback(result);
         } else {
             callback("ERROR")
