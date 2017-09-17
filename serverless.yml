@@ -14,4 +14,3 @@ functions:
 
 package:
   exclude:
-    - node_modules/**
